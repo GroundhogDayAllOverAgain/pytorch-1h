@@ -1,5 +1,6 @@
 *
 !.gitignore
 !notes.txt
+!pytorch-1h.ipynb
 !pytorch-1h.py
 !study_guide.py
