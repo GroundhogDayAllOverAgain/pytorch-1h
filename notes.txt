@@ -1,0 +1,18 @@
+Continue - Disable (Workspace)
+
+https://sebastianraschka.com/teaching/pytorch-1h/
+
+source ~/pytorch-1h/.venv/bin/activate
+
+https://claude.ai/share/31c4ae7f-6e35-467e-9cb7-3839e37fabb3
+
+python download_cfr.py --titles 21 40                  # small first test (otherwise all titles)
+python train_cfr_lm.py --estimate-only --preset small  # prediction; no GPU needed
+python train_cfr_lm.py --mem-test --preset small       # MEASURED peak memory on random tokens
+python train_cfr_lm.py --data cfr_text --preset small  # real training
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install numpy tensorboard tiktoken
+
+python -c "import torch; print(torch.__version__, torch.cuda.is_available(), torch.cuda.get_device_name(0))"

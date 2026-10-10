@@ -1,0 +1,5 @@
+*
+!.gitignore
+!notes.txt
+!pytorch-1h.py
+!study_guide.py
